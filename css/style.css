@@ -388,6 +388,11 @@ align-items: center !important;
   align-items: flex-start;
 }
 
+.imgNoticias {
+  height: 250px;
+  width: fit-content;
+  margin: auto;
+}
 
 
 /* Estilos responsivos para pantallas pequeñas (576px o menos) */
