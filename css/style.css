@@ -1,0 +1,530 @@
+/* Resetear estilos predeterminados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Hacer que el alto y ancho de la caja contemple los márgenes y el relleno */
+}
+
+/* Estilos para la barra de navegación colapsada */
+.navbar-collapse {
+  flex-grow: unset !important; /* Desactivar el crecimiento flexible de la barra de navegación. El!important es una regla de prioridad que indica que esta declaración de estilo debe aplicarse incluso si existen otras reglas que intentan cambiar la propiedad.*/
+}
+
+/* Estilos para el logo */
+.logo {
+  padding: 2px;
+  height: 50px; /* Fijar la altura del logo*/
+}
+
+/* Estilos para los enlaces (links) en hover (al pasar el cursor sobre él) */
+li a:hover {
+  text-decoration: underline; /* Subrayar */
+  text-decoration-color: deepskyblue; /* Color de la subrayado */
+  text-decoration-thickness: 3px; /* Grosor de la subrayado */
+}
+
+/* Estilos para la imagen de fondo */
+.background-image {
+  height: 45vh; /* Fijar la altura de la imagen de fondo al 45% de la altura del viewport */
+  background-image: url("../img/fondo.webp");
+  background-size: cover; /* Hacer que la imagen de fondo cubra todo el espacio disponible */
+  background-position: center center; /* Centrar la imagen de fondo */
+  opacity: 1; /* Establecer la opacidad al 100% (sin transparencia) */
+  position: relative; /* Establecer la posición relativa para que los elementos secundarios se posicionen relativamente a esta div */
+  display: flex !important; /* Forzar la visualización como flex */
+  flex-direction: column; /* Establecer la dirección de la columna para los elementos secundarios flex */
+  align-content: center; /* Centrar el contenido verticalmente */
+  flex-wrap: wrap; /* Permitir que los elementos flex envuelvan */
+  align-self: center !important; /* Centrar el elemento flex en sí mismo */
+  justify-content: center; /* Centrar horizontalmente el contenido */
+}
+
+/* Estilos para la caja de texto con h1 */
+.text-box-h1 {
+  display: flex !important;
+  justify-content: center;
+  align-items: center; /* Centrar verticalmente el contenido */
+  align-self: center;
+  width: fit-content; /* Establecer el ancho de la caja según el tamaño del contenido */
+  opacity: 0.8; /* Establecer la opacidad al 80% (20% de transparencia) */
+}
+
+/* Estilos para la caja de texto con h3 */
+.text-box-h3 {
+  align-self: center;
+  width: fit-content;
+}
+
+/* Estilos para h1 */
+h1 {
+  font-size: 4rem;
+  background-color: rgb(
+    103,
+    195,
+    222,
+    252
+  ); /* Color de fondo con transparencia */
+  color: #fff;
+  font-family: "Playfair Display";
+  padding: 5px;
+  text-align: center;
+  width: fit-content;
+}
+
+/* Estilos para h2 */
+h2 {
+  font-size: 3rem;
+  font-family: "Playfair Display";
+  text-align: center;
+  color: rgb(103, 195, 222);
+  padding-top: 5px;
+}
+
+h2::after {
+  content: ""; /* Crea un elemento pseudo ::after */
+  position: absolute;
+  left: 45%; /* Alinea la línea a la izquierda */
+  width: 10%; /* Establece el ancho de la línea al 33% del ancho del h2 */
+  height: 2.5px; /* Establece el grosor de la línea */
+  border-color: rgb(103, 195, 222); /* Define el color de la línea (celeste) */
+}
+
+/* Estilos para h3 */
+h3 {
+  font-size: 2.3rem;
+  background-color: rgba(255, 255, 255);
+  color: rgb(103, 195, 222);
+  font-family: "Playfair Display";
+  /* white-space: pre-wrap; */
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h4 {
+  font-size: 1.7rem;
+  font-family: "Playfair Display";
+  padding: 5px;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+h5{
+  font-size: 1.4rem;
+  font-family: "Playfair Display";
+  padding: 3px;
+}
+
+/* Titulos, textos varios */
+.color {
+  color: rgb(103, 195, 222);
+}
+.estiloLetra {
+  font-family: "Playfair Display";
+}
+
+/* Estilos para el contenido */
+.content {
+  padding: 20px;
+  text-align: justify; /* Centrar el texto horizontalmente */
+}
+
+/* Estilos para los parrafos */
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "Playfair Display";
+}
+
+/* Estilos para el pie de página */
+.footer {
+  font-size: 1rem;
+  background-color: rgba(7, 7, 7, 0);
+  text-align: center;
+}
+
+.imgProgramas {
+  width: 300px !important;
+  padding: 10px;
+  position: relative;
+}
+
+.botonVerMas {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center !important;
+}
+
+.botonReserva {
+padding: 10px;
+text-decoration: none;
+color: white;
+width: fit-content;
+background-color:rgb(103, 195, 222) ;
+border-style: none;
+align-items: center !important;
+}
+
+.botonReserva:hover {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+  background-color:rgb(103, 195, 222) ;
+  border-style: none;
+  align-items: center !important;
+  }
+
+.linkReserva {
+  text-decoration: none;
+  color: white;
+}
+
+.textoGris {
+  color: gray;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+.lineaGris {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Tabla de precios grilla */
+.tabla {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  justify-items: stretch;
+  align-items: center;
+  grid-template-areas:
+    "Titulo Titulo"
+    "Programa-1 Precio-1"
+    "Programa-2 Precio-2"
+    "Programa-3 Precio-3"
+    "Titulo-2 Titulo-2"
+    "Programa-4 Precio-4"
+    "Programa-5 Precio-5"
+    "Programa-6 Precio-6"
+    "Titulo-3 Titulo-3"
+    "Programa-7 Precio-7"
+    "Programa-8 Precio-8"
+    "Titulo-4 Titulo-4"
+    "Programa-9 Precio-9"
+    "Programa-10 Precio-10";
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Titulo {
+  justify-self: stretch;
+  align-self: center;
+  grid-area: Titulo;
+  border-bottom: 1px solid #ddd; /* Línea gris claro */
+  margin-bottom: 0 !important;
+}
+
+.Titulo-2 {
+  justify-self: stretch;
+  align-self: center;
+  grid-area: Titulo-2;
+  border-bottom: 1px solid #ddd; /* Línea gris claro */
+  margin-bottom: 0 !important;
+}
+
+.Titulo-3 {
+  justify-self: stretch;
+  align-self: center;
+  grid-area: Titulo-3;
+  border-bottom: 1px solid #ddd; /* Línea gris claro */
+  margin-bottom: 0 !important;
+}
+
+.Titulo-4 {
+  justify-self: stretch;
+  align-self: center;
+  grid-area: Titulo-4;
+  border-bottom: 1px solid #ddd; /* Línea gris claro */
+  margin-bottom: 0 !important;
+}
+
+.Programa-1 {
+  grid-area: Programa-1;
+}
+
+.Precio-1 {
+  justify-self: end;
+  grid-area: Precio-1;
+}
+
+.Programa-2 {
+  grid-area: Programa-2;
+}
+
+.Precio-2 {
+  justify-self: end;
+  grid-area: Precio-2;
+}
+
+.Programa-3 {
+  grid-area: Programa-3;
+}
+
+.Precio-3 {
+  justify-self: end;
+  grid-area: Precio-3;
+}
+
+.Programa-4 {
+  grid-area: Programa-4;
+}
+
+.Precio-4 {
+  justify-self: end;
+  grid-area: Precio-4;
+}
+
+.Programa-5 {
+  grid-area: Programa-5;
+}
+
+.Precio-5 {
+  justify-self: end;
+  grid-area: Precio-5;
+}
+
+.Programa-6 {
+  grid-area: Programa-6;
+}
+
+.Precio-6 {
+  justify-self: end;
+  grid-area: Precio-6;
+}
+
+.Programa-7 {
+  grid-area: Programa-7;
+}
+
+.Precio-7 {
+  justify-self: end;
+  grid-area: Precio-7;
+}
+
+.Programa-8 {
+  grid-area: Programa-8;
+}
+
+.Precio-8 {
+  justify-self: end;
+  grid-area: Precio-8;
+}
+
+.Programa-9 {
+  grid-area: Programa-9;
+}
+
+.Precio-9 {
+  justify-self: end;
+  grid-area: Precio-9;
+}
+
+.Programa-10 {
+  grid-area: Programa-10;
+}
+
+.Precio-10 {
+  justify-self: end;
+  grid-area: Precio-10;
+}
+
+/* Estilos mapa Google pagina contacto*/
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 85%;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 400px;
+}
+.gmap_iframe {
+  height: 350px !important;
+}
+
+/* Estilos box contacto*/
+.boxContacto {
+  padding-top:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilos box programas*/
+.boxProgramas1 {
+  padding-top:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.boxProgramas2 {
+  padding-top:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+
+
+
+/* Estilos responsivos para pantallas pequeñas (576px o menos) */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .background-image {
+    height: 30vh;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  .piePag {
+    font-size: 0.3rem;
+  }
+  .mapouter{
+    height: 200px;
+    width: 70%;
+  }
+  .gmap_canvas {
+    height: 200px;
+  }
+  .gmap_iframe {
+    height: 180px !important;
+  }
+  .boxContacto {
+    width: 70%;
+    margin: auto;
+  }
+  .boxProgramas1 {
+    align-items: center;
+    justify-content: center;
+  }
+  .boxProgramas2 {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Estilos responsivos para pantallas medianas (entre 577px y 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  h1 {
+    font-size: 2.35rem;
+  }
+  .background-image {
+    height: 40vh;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .mapouter{
+    height: 220px;
+    width: 70%;
+  }
+  .gmap_canvas {
+    height: 220px;
+  }
+  .gmap_iframe {
+    height: 200px !important;
+  }
+  .boxProgramas1 {
+    align-items: center;
+    justify-content: center;
+  }
+  .boxProgramas2 {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Estilos responsivos para pantallas grandes (entre 769px y 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  h1 {
+    font-size: 3.2rem; /* Tamaño de fuente para pantallas grandes */
+  }
+  .background-image {
+    height: 45vh;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .text-box-h3 {
+    top: 64%;
+  }
+  .mapouter{
+    height: 270px;
+    width: 70%;
+  }
+  .gmap_canvas {
+    height: 270px;
+  }
+  .gmap_iframe {
+    height: 250px !important;
+  }
+}
+
+/* Estilos responsivos para pantallas mayores a 992px */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: block !important;
+    flex-basis: content; /* Esto significa que el tamaño base de los elementos se ajustará automáticamente al contenido que contienen. */
+  }
+}
