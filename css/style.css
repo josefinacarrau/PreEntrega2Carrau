@@ -219,7 +219,7 @@ align-items: center !important;
     "Titulo-4 Titulo-4"
     "Programa-9 Precio-9"
     "Programa-10 Precio-10";
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -399,23 +399,26 @@ align-items: center !important;
     height: 30vh;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   h4 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   h5 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.9rem;
   }
   .piePag {
     font-size: 0.3rem;
   }
   .mapouter{
     height: 200px;
-    width: 70%;
+    width: 100%;
   }
   .gmap_canvas {
     height: 200px;
@@ -424,7 +427,7 @@ align-items: center !important;
     height: 180px !important;
   }
   .boxContacto {
-    width: 70%;
+    width: 95%;
     margin: auto;
   }
   .boxProgramas1 {
