@@ -1,3 +1,21 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Hacer que el alto y ancho de la caja contemple los márgenes y el relleno */
+}
 
+header nav div img .logo {
+  padding: 2px;
+  height: 50px;
+}
+header nav div div .navbar-collapse {
+  flex-grow: unset !important; /* Desactivar el crecimiento flexible de la barra de navegación. El!important es una regla de prioridad que indica que esta declaración de estilo debe aplicarse incluso si existen otras reglas que intentan cambiar la propiedad.*/
+}
+header nav div div ul li a:hover {
+  text-decoration: underline; /* Subrayar */
+  text-decoration-color: deepskyblue; /* Color de la subrayado */
+  text-decoration-thickness: 3px; /* Grosor de la subrayado */
+}
 
 /*# sourceMappingURL=style.css.map */
