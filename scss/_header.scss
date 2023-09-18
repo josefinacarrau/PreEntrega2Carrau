@@ -1,0 +1,24 @@
+header {
+  nav {
+    img {
+      .logo {
+        padding: 2px;
+        height: 50px;
+      }
+    }
+    div {
+      .navbar-collapse {
+        flex-grow: unset !important; /* Desactivar el crecimiento flexible de la barra de navegación. El!important es una regla de prioridad que indica que esta declaración de estilo debe aplicarse incluso si existen otras reglas que intentan cambiar la propiedad.*/
+      }
+      ul {
+        li {
+          a:hover {
+            text-decoration: underline; /* Subrayar */
+            text-decoration-color: deepskyblue; /* Color de la subrayado */
+            text-decoration-thickness: 3px; /* Grosor de la subrayado */
+          }
+        }
+      }
+    }
+  }
+}
